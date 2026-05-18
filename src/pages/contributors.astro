@@ -1,10 +1,82 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const generations = [
+  {
+    title: "Gen 0",
+    description:
+      "Foundational influences and early references before a distinct Singapore Locking scene emerged.",
+    contributors: [
+      {
+        name: "Contributor Name",
+        affiliation: "Affiliation / Crew",
+        status: "Current status",
+        quote: "Short quote or contribution summary.",
+        image: "/images/contributors/placeholder.jpg",
+        instagram: "https://instagram.com/",
+      },
+    ],
+  },
+  {
+    title: "Gen 1",
+    description: "Early pioneers who helped establish Locking in Singapore.",
+    contributors: [],
+  },
+  {
+    title: "Gen 2",
+    description:
+      "Scene builders who expanded teaching, battles, performances, and community activity.",
+    contributors: [],
+  },
+  {
+    title: "Gen 3",
+    description:
+      "Current and emerging contributors carrying the scene forward.",
+    contributors: [],
+  },
+];
 ---
 
-<BaseLayout title="Key Contributors | Lion City Locking Library">
-  <h1>Key Contributors</h1>
-  <p>
-    Meet the people who have contributed to the Singapore Locking dance scene.
-  </p>
+<BaseLayout title="Contributors | Lion City Locking Library">
+  <section class="page-hero">
+    <p class="page-label">Community</p>
+
+    <h1>Contributors</h1>
+
+    <p class="page-description">
+      Meet the people who shaped Singapore's Locking scene.
+    </p>
+  </section>
+
+  {
+    generations.map((generation) => (
+      <section class="contributor-generation">
+        <div class="generation-heading">
+          <h2>{generation.title}</h2>
+          <p>{generation.description}</p>
+        </div>
+
+        <div class="contributor-grid">
+          {generation.contributors.map((person) => (
+            <article class="contributor-card">
+              <img src={person.image} alt={person.name} />
+
+              <div class="contributor-card-content">
+                <h3>{person.name}</h3>
+
+                <p class="contributor-meta">{person.affiliation}</p>
+                <p class="contributor-status">{person.status}</p>
+
+                <blockquote>"{person.quote}"</blockquote>
+
+                <a href={person.instagram} target="_blank">
+                  Instagram
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))
+  }
 </BaseLayout>

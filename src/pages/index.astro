@@ -1,17 +1,75 @@
 ---
-import Welcome from "../components/Welcome.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Layout from "../layouts/Layout.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-  <Welcome />
-</Layout>
----
 <BaseLayout title="Lion City Locking Library">
-  <h1>Lion City Locking Library</h1>
-  <p>Documenting the past, present, and future of Singapore Campbellocking.</p>
+  <section class="hero">
+    <p class="hero-label">Singapore Campbellocking Archive</p>
+
+    <h1>Lion City Locking Library</h1>
+
+    <p class="hero-description">
+      Documenting the past, present, and future of Singapore Campbellocking.
+    </p>
+  </section>
+  <section class="home-intro">
+    <p>
+      Lion City Locking Library is an independent digital archive documenting
+      the history and evolution of Locking dance in Singapore.
+    </p>
+
+    <p>
+      Through interviews, timelines, essays, and community memory, this project
+      aims to preserve the stories, experiences, and contributions that shaped
+      Singapore's Locking scene.
+    </p>
+
+    <p>The Funk is now online.</p>
+  </section>
+  <section class="home-grid">
+    <a href="/timeline" class="home-card">
+      <h2>Timeline</h2>
+      <p>
+        Explore key eras, events, crews, and milestones in Singapore Locking
+        history.
+      </p>
+    </a>
+
+    <a href="/interviews" class="home-card">
+      <h2>Interviews</h2>
+      <p>
+        Read oral histories and reflections from dancers, teachers, and
+        contributors.
+      </p>
+    </a>
+
+    <a href="/campbellocking" class="home-card">
+      <h2>Campbellocking</h2>
+      <p>
+        Learn about the roots, vocabulary, philosophy, and spirit of Locking.
+      </p>
+    </a>
+
+    <a href="/contributors" class="home-card">
+      <h2>Contributors</h2>
+      <p>
+        Recognise the people who shaped and supported Singapore's Locking scene.
+      </p>
+    </a>
+
+    <a href="/ask" class="home-card">
+      <h2>Ask</h2>
+      <p>
+        Ask questions and invite the community to share knowledge and memories.
+      </p>
+    </a>
+  </section>
+  <section class="featured-quote">
+    <blockquote>
+      "You have to unlock the lock. You have to unlock the character. You have
+      to totally surrender to the music."
+    </blockquote>
+
+    <p>~ Chunky</p>
+  </section>
 </BaseLayout>
