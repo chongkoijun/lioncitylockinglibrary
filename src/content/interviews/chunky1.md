@@ -81,7 +81,7 @@ draft: false
 
 What makes Locking, Locking? Is it the sharp stops, the signature moves, or something less visible - an energy, an intention? According to Singapore dance pioneer Chunky, the true essence of Locking lies not just in what you do, but how and why you do it.
 
-Origins of the Dance: Don, the Moves, and the Mindset
+## Origins of the Dance: Don, the Moves, and the Mindset
 
 "Locking started in 1970 - late '69, early 1970, those were the formative years," Chunky begins. "To understand the Campbellock, the first three people that are very crucial are Don [Campbell], [Jimmy] 'Scoo B Doo' [Foster], and Damita Jo Freeman."
 
@@ -95,7 +95,7 @@ This shift from street freestyle to choreographed performance would shape what m
 
 "That version of Locking is what the world references right now... we are referencing the showcase and performance part of the dance, which kind of evolved a little bit differently from how Don used to start his dance. Or how Don perceived it to be."
 
-Don's style
+## Don's style
 
 Even as Locking entered the mainstream, Don Campbell himself stayed rooted in freestyle and individuality.
 
@@ -103,7 +103,7 @@ Even as Locking entered the mainstream, Don Campbell himself stayed rooted in fr
 
 His essence? "Improvisation, adding your own flavour, doing the Lock... he was all about that."
 
-Locking Across Cultures
+## Locking Across Cultures
 
 As Locking spread globally, different countries developed unique takes. "Greg Campbellock Jr came to Korea, Taiwan. Tony Gogo eventually spread the dance to Japan. [They] spread the dance in their perspective," Chunky elaborates.
 
@@ -119,7 +119,7 @@ Initially, he struggled with this variation: "There was a phase where people sta
 
 Chunky continues, "But then again, if Don was here to see what Nobby did, he would have been very excited about the flavour he brings. He might have probably told Nobby, 'You gotta do stops, you gotta do me first before you do a little bit of you.' But he would have been excited."
 
-A Balancing Act: Power, Vocabulary, and Flavour
+## A Balancing Act: Power, Vocabulary, and Flavour
 
 For Chunky, the debate around what constitutes "real" Locking often misses the point. "There must be a good balance," he says. "You must be able to master all the 8 Campbellock foundation moves, all the signature moves. But you must also be able to have your own flavour."
 
@@ -129,7 +129,7 @@ Power is also not to be dismissed. "Power moves are also very important," he not
 
 Still, he cautions on over-focusing on vocabulary. "When you see battles of the 'Not For Lockers' category, dancers' technique, know-how and vocabulary of Locking is very limited, so they fall back on their genre. But actually, that is closer to the spirit of Campbellocking than if you are so serious on the vocabulary and only do the vocabulary."
 
-The Heart of Locking: Character and Connection
+## The Heart of Locking: Character and Connection
 
 So what is the essence of Locking? Chunky answers with clarity and conviction: "Yes, do the Don. The Don is the stop, but it's more than just the stop. The Don is also the character."
 
@@ -143,7 +143,7 @@ How does one connect like Don did? "You must have the power, the intent. In a wa
 
 Importantly, this intent manifests in "the stop, the freeze. So when you point, and you lock, do self five. All that, you have to freeze."
 
-"You Have to Unlock the Lock"
+## "You Have to Unlock the Lock"
 
 Being a Locker, according to Chunky, is not just about dancing - it's about surrendering to the music.
 
@@ -151,8 +151,8 @@ Being a Locker, according to Chunky, is not just about dancing - it's about surr
 
 He praises crews like Ghetto Funk from Amsterdam: "These are the guys that you look out [for] because they really surrender to the music. They do Don, and they are so different. They don't look like any other country."
 
-Final Words
+## Final Words
 
-In a single, powerful sentence, Chunky sums it up:
+Chunky sums it up nicely:
 
 "In a nutshell, you talk about the essence of the Lock - it's the stops, it's the character. And you have to entertain, and to create, you have to connect."

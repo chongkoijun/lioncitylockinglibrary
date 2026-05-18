@@ -1,143 +1,47 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const eras = [
-  {
-    title: "The Early Years",
-    entries: [
-      {
-        year: "2005",
-        title: "BREAK! The Urban Funk Spectacular comes to Singapore",
-        points: [],
-      },
-      {
-        year: "2006",
-        title: "G-Lockers performs a pure Locking item at Funkamania XI",
-        points: [
-          "The first group to showcase pure Locking in Singapore",
-          "Taught by Xue Gao from Ocean Butterflies",
-        ],
-      },
-      {
-        year: "2006",
-        title: "Sunset Alleycats is formed",
-        points: [
-          "The first Singapore dance crew representing Funk dance",
-          "Members: Chunky, Fong, David, Rachel, Wei Jie, Alex (AC) + Ben (DJ Psyk)",
-        ],
-      },
-      {
-        year: "2007",
-        title: "Chunky starts teaching Locking at O School",
-        points: [
-          "The first time the general public has access to learning pure Locking",
-        ],
-      },
-      {
-        year: "2007",
-        title: "The Big Groove by O School",
-        points: [
-          "Wrecking Crew Orchestra from Japan is invited to perform and teach",
-          "Hanai and U U become the first overseas Locking instructors to teach a workshop in Singapore",
-        ],
-      },
-    ],
-  },
-  {
-    title: "Lion City Lockers",
-    entries: [
-      {
-        year: "2008",
-        title: "Lion City Lockers is founded",
-        points: [
-          "Chris Su from KDSP proposes to form a Locking crew",
-          "Chunky counter-proposes to create a community",
-          "Lion City Lockers is born",
-        ],
-      },
-      {
-        year: "2008",
-        title: "Sunset Alleycats represents Singapore at Max Party IV",
-        points: ["Chunky reaches Top 4 in the 1v1 Locking category"],
-      },
-      {
-        year: "2008",
-        title: "K.O. Night 2008",
-        points: [
-          "Singapore's first studio-run Locking battle",
-          "Organised by O School",
-        ],
-      },
-      {
-        year: "2008",
-        title: "Lock-down Battle Night 2008",
-        points: [
-          "Singapore's first Locking-only battle event",
-          "This marks the beginning of many Locking events to come",
-        ],
-      },
-    ],
-  },
-  {
-    title: "The Golden Days",
-    entries: [
-      {
-        year: "2010s",
-        title: "Expansion of the Singapore Locking scene",
-        points: [
-          "More dancers, crews, battles, workshops, and overseas exchanges emerge",
-        ],
-      },
-    ],
-  },
-  {
-    title: "The New Era",
-    entries: [
-      {
-        year: "2020s",
-        title: "Contemporary evolution of Locking in Singapore",
-        points: [
-          "New dancers reinterpret Locking through battles, performances, classes, and cross-cultural influences",
-        ],
-      },
-    ],
-  },
-];
+import { eras } from "../data/timeline";
 ---
 
 <BaseLayout title="Timeline | Lion City Locking Library">
-  <section class="timeline-page">
+  <section class="page-hero">
+    <p class="page-label">History</p>
+
     <h1>Timeline</h1>
-    <p class="timeline-intro">The story of Singapore's Campbellocking scene.</p>
 
-    {
-      eras.map((era) => (
-        <section class="timeline-era">
-          <h2>{era.title}</h2>
-
-          <div class="timeline">
-            {era.entries.map((entry) => (
-              <article class="timeline-entry">
-                <div class="timeline-year">{entry.year}</div>
-
-                <div class="timeline-marker" />
-
-                <div class="timeline-content">
-                  <h3>{entry.title}</h3>
-
-                  {entry.points.length > 0 && (
-                    <ul>
-                      {entry.points.map((point) => (
-                        <li>{point}</li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-      ))
-    }
+    <p class="page-description">
+      A chronological archive of key events, crews, battles, workshops, and
+      milestones in Singapore's Locking history.
+    </p>
   </section>
+
+  {
+    eras.map((era) => (
+      <section class="timeline-era">
+        <h2>{era.title}</h2>
+
+        <div class="timeline">
+          {era.entries.map((entry) => (
+            <article class="timeline-entry">
+              <div class="timeline-year">{entry.year}</div>
+
+              <div class="timeline-marker" />
+
+              <div class="timeline-content">
+                <h3>{entry.title}</h3>
+
+                {entry.points.length > 0 && (
+                  <ul>
+                    {entry.points.map((point) => (
+                      <li>{point}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))
+  }
 </BaseLayout>
