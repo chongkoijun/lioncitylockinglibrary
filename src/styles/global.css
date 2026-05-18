@@ -22,6 +22,24 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.site-nav {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  opacity: 0.6;
+}
+
 h1 {
   margin-bottom: 1rem;
 }
@@ -29,6 +47,8 @@ h1 {
 main {
   max-width: 750px;
 }
+
+/* Article styles */
 
 article {
   line-height: 1.8;
