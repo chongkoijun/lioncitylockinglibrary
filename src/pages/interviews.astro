@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const interviews = await getCollection("interviews");
+---
+
+<BaseLayout title="Interviews | Lion City Locking Library">
+  <h1>Interviews</h1>
+
+  {
+    interviews.map((interview) => (
+      <article>
+        <h2>
+          <a href={`/interviews/${interview.id}`}>{interview.data.title}</a>
+        </h2>
+
+        <p>
+          <strong>Interviewee:</strong> {interview.data.interviewee}
+        </p>
+
+        <p>
+          <strong>Date:</strong> {interview.data.date}
+        </p>
+
+        <p>{interview.data.summary}</p>
+
+        <p>
+          <strong>Topics:</strong> {interview.data.topics.join(", ")}
+        </p>
+
+        <hr />
+      </article>
+    ))
+  }
+</BaseLayout>

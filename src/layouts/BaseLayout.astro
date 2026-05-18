@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+
+const { title } = Astro.props;
+---
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/campbellocking">What is Campbellocking?</a>
+      <a href="/timeline">Timeline</a>
+      <a href="/contributors">Key Contributors</a>
+      <a href="/ask">Ask Anything</a>
+      <a href="/interviews">Lock Talk</a>
+    </nav>
+
+    <slot />
+  </body>
+</html>
