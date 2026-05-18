@@ -11,6 +11,8 @@ const interviews = defineCollection({
   date: z.string(),
   summary: z.string(),
   interviewee: z.string(),
+    recorded_date: z.string(),
+  country: z.string(),
   topics: z.array(z.string()),
   tags: z.array(z.string()),
 }),

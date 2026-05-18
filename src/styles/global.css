@@ -307,6 +307,39 @@ article ol {
   padding-left: 1.5rem;
 }
 
+/* Interview topics */
+
+.interview-topics {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.interview-topics h2 {
+  font-size: 1rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem !important;
+  border-top: none !important;
+  padding-top: 0 !important;
+}
+
+.interview-topics ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.interview-topics li {
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
 /* Interview/article content */
 
 .prose {
