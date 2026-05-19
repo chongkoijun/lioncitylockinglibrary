@@ -17,12 +17,24 @@ export async function getStaticPaths() {
 
 const { interview } = Astro.props;
 const { Content } = await render(interview);
+
+const allInterviews = await getCollection("interviews");
+
+const relatedInterviews = allInterviews
+  .filter((otherInterview) => {
+    if (otherInterview.id === interview.id) return false;
+
+    return otherInterview.data.topics?.some((topic) =>
+      interview.data.topics?.includes(topic),
+    );
+  })
+  .slice(0, 3);
 ---
 
 <BaseLayout title={`${interview.data.title} | Lion City Locking Library`}>
   <article class="prose">
     <header class="interview-header">
-      <p class="page-label">Interview</p>
+      <p class="page-label">Lock Talk</p>
 
       <h1>{interview.data.title}</h1>
 
@@ -49,13 +61,29 @@ const { Content } = await render(interview);
       )
     }
 
-    <section class="related-interviews">
-      <h2>Related articles</h2>
+    {
+      relatedInterviews.length > 0 && (
+        <section class="related-interviews">
+          <h2>Related Articles</h2>
 
-      <p>
-        More conversations from the Lion City Locking Library will appear here
-        in the future.
-      </p>
-    </section>
+          <div class="related-interviews-grid">
+            {relatedInterviews.map((related) => (
+              <a
+                class="related-interview-card"
+                href={`/interviews/${related.id}`}
+              >
+                <h3>{related.data.title}</h3>
+
+                <p class="related-interview-date">
+                  {related.data.recorded_date}
+                </p>
+
+                <p>{related.data.summary}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
   </article>
 </BaseLayout>

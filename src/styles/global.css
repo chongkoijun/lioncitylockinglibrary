@@ -842,3 +842,54 @@ article ol {
     grid-template-columns: 1fr;
   }
 }
+
+/* Related Lock Talks */
+
+.related-interviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.related-interview-card {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+
+  text-decoration: none;
+  color: inherit;
+  background: var(--color-white);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.related-interview-card:hover {
+  border-color: var(--color-ink);
+  transform: translateY(-2px);
+}
+
+.related-interview-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.related-interview-date {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.related-interview-card p:last-child {
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .related-interviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
