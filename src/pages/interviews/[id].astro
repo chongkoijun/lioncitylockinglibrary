@@ -19,19 +19,41 @@ const { interview } = Astro.props;
 const { Content } = await render(interview);
 ---
 
-<BaseLayout title={interview.data.title}>
+<BaseLayout title={`${interview.data.title} | Lion City Locking Library`}>
   <article class="prose">
-    <h1>{interview.data.title}</h1>
-    <p>{interview.data.date}</p>
+    <header class="interview-header">
+      <p class="page-label">Interview</p>
+
+      <h1>{interview.data.title}</h1>
+
+      <p class="interview-date">
+        Recorded: {interview.data.recorded_date}
+      </p>
+    </header>
 
     <Content />
 
-    <div class="interview-topics">
-      <h2>Topics</h2>
+    {
+      interview.data.topics?.length > 0 && (
+        <section class="interview-topics">
+          <h2>Topics</h2>
 
-      <ul>
-        {interview.data.topics.map((topic) => <li>{topic}</li>)}
-      </ul>
-    </div>
+          <ul>
+            {interview.data.topics.map((topic) => (
+              <li>{topic}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <section class="related-interviews">
+      <h2>Related articles</h2>
+
+      <p>
+        More conversations from the Lion City Locking Library will appear here
+        in the future.
+      </p>
+    </section>
   </article>
 </BaseLayout>
