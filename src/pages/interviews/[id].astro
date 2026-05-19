@@ -41,6 +41,13 @@ const relatedInterviews = allInterviews
       <p class="interview-date">
         Recorded: {interview.data.recorded_date}
       </p>
+
+      <p class="interview-contributor">
+        Featuring{" "}
+        <a href={`/contributors/${interview.data.interviewee.toLowerCase()}`}>
+          {interview.data.interviewee}
+        </a>
+      </p>
     </header>
 
     <Content />

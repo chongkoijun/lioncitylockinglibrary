@@ -1,0 +1,68 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const interviews = await getCollection("interviews");
+
+  const contributors = interviews.map(
+    (interview) => interview.data.interviewee,
+  );
+
+  const uniqueContributors = [...new Set(contributors)];
+
+  return uniqueContributors.map((name) => ({
+    params: {
+      name: name.toLowerCase(),
+    },
+    props: {
+      name,
+    },
+  }));
+}
+
+const { name } = Astro.props;
+
+const interviews = await getCollection("interviews");
+
+const contributorInterviews = interviews.filter(
+  (interview) =>
+    interview.data.interviewee?.toLowerCase() === name.toLowerCase(),
+);
+---
+
+<BaseLayout title={`${name} | Lion City Locking Library`}>
+  <section class="contributor-page">
+    <header class="contributor-page-header">
+      <p class="page-label">Contributor</p>
+
+      <h1>{name}</h1>
+
+      <p class="contributor-page-intro">
+        Interviews and archive material connected to {name}.
+      </p>
+    </header>
+
+    <section class="contributor-section">
+      <h2>Lock Talks</h2>
+
+      <div class="interviews-list">
+        {
+          contributorInterviews.map((interview) => (
+            <article class="interviews-card">
+              <h3>
+                <a href={`/interviews/${interview.id}`}>
+                  {interview.data.title}
+                </a>
+              </h3>
+
+              <p class="interviews-meta">{interview.data.recorded_date}</p>
+
+              <p class="interviews-summary">{interview.data.summary}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </section>
+</BaseLayout>
