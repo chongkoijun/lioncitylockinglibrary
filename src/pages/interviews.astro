@@ -3,34 +3,47 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const interviews = await getCollection("interviews");
+
+const sortedInterviews = interviews.sort(
+  (a, b) =>
+    new Date(b.data.recorded_date).getTime() -
+    new Date(a.data.recorded_date).getTime(),
+);
 ---
 
 <BaseLayout title="Interviews | Lion City Locking Library">
-  <h1>Interviews</h1>
+  <section class="interviews-index">
+    <div class="interviews-index-header">
+      <h1>Interviews</h1>
 
-  {
-    interviews.map((interview) => (
-      <article>
-        <h2>
-          <a href={`/interviews/${interview.id}`}>{interview.data.title}</a>
-        </h2>
+      <p class="interviews-index-intro">
+        Conversations with dancers, pioneers, and community members connected to
+        Locking culture in Singapore.
+      </p>
+    </div>
 
-        <p>
-          <strong>Interviewee:</strong> {interview.data.interviewee}
-        </p>
+    <div class="interviews-list">
+      {
+        sortedInterviews.map((interview) => (
+          <article class="interviews-card">
+            <h2>
+              <a href={`/interviews/${interview.id}`}>{interview.data.title}</a>
+            </h2>
 
-        <p>
-          <strong>Date:</strong> {interview.data.date}
-        </p>
+            <p class="interviews-meta">{interview.data.recorded_date}</p>
 
-        <p>{interview.data.summary}</p>
+            <p class="interviews-summary">{interview.data.summary}</p>
 
-        <p>
-          <strong>Topics:</strong> {interview.data.topics.join(", ")}
-        </p>
-
-        <hr />
-      </article>
-    ))
-  }
+            {interview.data.topics?.length > 0 && (
+              <div class="interviews-topics">
+                {interview.data.topics.map((topic) => (
+                  <span class="interviews-topic-tag">{topic}</span>
+                ))}
+              </div>
+            )}
+          </article>
+        ))
+      }
+    </div>
+  </section>
 </BaseLayout>
