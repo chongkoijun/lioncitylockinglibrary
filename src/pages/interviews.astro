@@ -37,7 +37,9 @@ const sortedInterviews = interviews.sort(
             {interview.data.topics?.length > 0 && (
               <div class="interviews-topics">
                 {interview.data.topics.map((topic) => (
-                  <span class="interviews-topic-tag">{topic}</span>
+                  <span class="interviews-topic-tag">
+                    <a href={`/topics/${topic.toLowerCase()}`}>{topic}</a>
+                  </span>
                 ))}
               </div>
             )}

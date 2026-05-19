@@ -40,7 +40,9 @@ const { Content } = await render(interview);
 
           <ul>
             {interview.data.topics.map((topic) => (
-              <li>{topic}</li>
+              <li>
+                <a href={`/topics/${topic.toLowerCase()}`}>{topic}</a>
+              </li>
             ))}
           </ul>
         </section>
