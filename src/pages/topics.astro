@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const interviews = await getCollection("interviews");
+
+const topicCounts: Record<string, number> = {};
+
+interviews.forEach((interview) => {
+  interview.data.topics?.forEach((topic) => {
+    topicCounts[topic] = (topicCounts[topic] ?? 0) + 1;
+  });
+});
+
+const sortedTopics = Object.entries(topicCounts).sort(
+  ([, countA], [, countB]) => countB - countA,
+);
+---
+
+<BaseLayout title="Topics | Lion City Locking Library">
+  <section class="topics-index">
+    <div class="topics-index-header">
+      <h1>Topics</h1>
+
+      <p class="topics-index-intro">
+        Explore recurring themes, ideas, and conversations across the Lock Talk
+        archive.
+      </p>
+    </div>
+
+    <div class="topics-grid">
+      {
+        sortedTopics.map(([topic, count]) => (
+          <a class="topic-card" href={`/topics/${topic.toLowerCase()}`}>
+            <h2>{topic}</h2>
+
+            <p>
+              {count} {count === 1 ? "Lock Talk" : "Lock Talks"}
+            </p>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
