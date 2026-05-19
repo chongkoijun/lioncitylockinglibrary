@@ -545,11 +545,18 @@ article ol {
   max-width: 750px;
   color: var(--color-soft);
 }
-
 .contributor-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  align-items: stretch;
+}
+
+.contributor-card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
 }
 
 .contributor-card {
@@ -558,6 +565,11 @@ article ol {
   border-radius: 14px;
   overflow: hidden;
   font-size: 0.95rem;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .contributor-card img {
