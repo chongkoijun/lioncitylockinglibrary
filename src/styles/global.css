@@ -428,6 +428,8 @@ article ol {
 /* Timeline eras */
 
 .timeline-era {
+  width: min(var(--max-width), 100%);
+  margin: 0 auto;
   padding-bottom: 7rem;
 }
 
@@ -435,6 +437,7 @@ article ol {
   font-size: 3rem;
   margin-bottom: 3rem;
   padding-bottom: 1rem;
+
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -446,11 +449,15 @@ article ol {
 
 .timeline::before {
   content: "";
+
   position: absolute;
-  left: 170px;
+
+  left: 105px;
   top: 0;
   bottom: 0;
+
   width: 1px;
+
   background: var(--color-border);
 }
 
@@ -510,39 +517,30 @@ article ol {
 
 .timeline-entry {
   display: grid;
-  grid-template-columns: 120px 40px 1fr;
+  grid-template-columns: 80px 20px 1fr;
   gap: 2rem;
 
-  align-items: start;
-
-  position: relative;
-
   padding-bottom: 4rem;
+
+  align-items: start;
 }
 
 /* Year */
 
 .timeline-year {
   text-align: right;
+
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.3;
+
   color: var(--color-muted);
-  padding-top: 0;
 }
 
 /* Timeline marker */
 
 .timeline-marker {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--color-white);
-
-  position: relative;
-  z-index: 2;
-
-  margin-top: 0.35rem;
+  width: 0;
 }
 
 /* Content */
@@ -570,15 +568,12 @@ article ol {
 
 @media (max-width: 700px) {
   .timeline::before {
-    left: 90px;
+    left: 80px;
   }
 
   .timeline-entry {
-  display: grid;
-  grid-template-columns: 100px 30px 1fr;
+  grid-template-columns: 70px 20px 1fr;
   gap: 1rem;
-
-  align-items: start;
 
   margin-bottom: 3rem;
 }
@@ -590,7 +585,12 @@ article ol {
   .timeline-content h3 {
     font-size: 1.1rem;
   }
+
+  .timeline-era {
+  overflow-x: hidden;
+  }
 }
+
 
 /* Contributors page styles */
 
