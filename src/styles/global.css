@@ -1021,3 +1021,47 @@ article ol {
     font-size: 2.8rem;
   }
 }
+
+/* Ask Anything */
+
+.ask-section {
+  margin-top: 5rem;
+}
+
+.ask-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.ask-section ul {
+  padding-left: 1.25rem;
+}
+
+.ask-section li {
+  margin-bottom: 0.9rem;
+  line-height: 1.8;
+  color: var(--color-muted-dark);
+}
+
+.ask-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+
+  margin-top: 5rem;
+}
+
+.ask-grid .ask-section {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .ask-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.ask-page {
+  width: min(var(--max-width), 100%);
+  margin: 0 auto;
+}
