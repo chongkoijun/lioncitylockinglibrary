@@ -578,6 +578,11 @@ article ol {
   object-fit: cover;
   display: block;
   background: var(--color-border-2);
+  transition: transform 0.25s ease;
+}
+
+.contributor-card:hover img {
+  transform: scale(1.03);
 }
 
 .contributor-card-content {

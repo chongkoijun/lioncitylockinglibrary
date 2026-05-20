@@ -43,10 +43,11 @@ const generations = [
     contributors: [
       {
         name: 'Ian Poh "Chunky"',
+        slug: "chunky",
         affiliation: "",
         status: "",
         quote: "",
-        image: "/images/contributors/placeholder.jpg",
+        image: "/images/contributors/chunky.png",
         instagram: "",
       },
       {
@@ -67,6 +68,7 @@ const generations = [
       },
       {
         name: 'Cheong Wei Fong "Fong"',
+        slug: "fong",
         affiliation: "",
         status: "",
         quote: "",
@@ -342,9 +344,7 @@ const generations = [
 
                 {person.quote && <blockquote>"{person.quote}"</blockquote>}
 
-                <a href={`/contributors/${person.name.toLowerCase()}`}>
-                  View profile
-                </a>
+                <a href={`/contributors/${person.slug}`}>View profile</a>
 
                 {person.instagram && (
                   <a href={person.instagram} target="_blank">
