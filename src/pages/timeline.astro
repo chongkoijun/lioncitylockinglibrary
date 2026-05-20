@@ -37,6 +37,22 @@ import { eras } from "../data/timeline";
                     ))}
                   </ul>
                 )}
+
+                {entry.contributors?.length > 0 && (
+                  <div class="timeline-related">
+                    <p>Related contributors</p>
+
+                    <ul>
+                      {entry.contributors.map((person) => (
+                        <li>
+                          <a href={`/contributors/${person}`}>
+                            {person.replace(/-/g, " ")}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </article>
           ))}

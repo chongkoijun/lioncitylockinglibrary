@@ -6,6 +6,7 @@ export const eras = [
         year: "2005",
         title: "BREAK! The Urban Funk Spectacular comes to SG",
         points: [],
+        contributors: [],
       },
 
       {
@@ -15,6 +16,7 @@ export const eras = [
           "The first group to showcase pure Locking in Singapore",
           "Taught by Xue Gao from Ocean Butterflies",
         ],
+        contributors: [],
       },
 
       {
@@ -24,6 +26,12 @@ export const eras = [
           "The first Singapore dance crew representing Funk dance",
           "Members: Chunky, Fong, David, Rachel, Wei Jie, Alex (AC) + Ben (DJ Psyk)",
         ],
+        contributors: [
+          "chunky",
+          "fong",
+          "david-lee",
+          "rachel-hoe",
+        ],
       },
 
       {
@@ -32,6 +40,7 @@ export const eras = [
         points: [
           "The first time the general public has access to learning pure Locking",
         ],
+        contributors: ["chunky"],
       },
 
       {
@@ -41,6 +50,7 @@ export const eras = [
           "Wrecking Crew Orchestra (Japan) is invited to perform and teach",
           "Hanai & UU become the first overseas Locking instructors to teach a workshop in Singapore",
         ],
+        contributors: [],
       },
     ],
   },
@@ -56,6 +66,10 @@ export const eras = [
           "Chunky counter-proposes to create a community. Chris Su gives his blessings and Lion City Lockers is born",
           "Read the original blog post here!",
         ],
+        contributors: [
+          "chunky",
+          "chris-su",
+        ],
       },
 
       {
@@ -66,6 +80,10 @@ export const eras = [
           "Watch their performance here!",
           "Chunky reaches Top 4 in the 1v1 Locking category",
         ],
+        contributors: [
+          "chunky",
+          "fong",
+        ],
       },
 
       {
@@ -75,6 +93,7 @@ export const eras = [
           "Singapore's first studio run Locking battle",
           "Organised by O School with finals judged by Hilty & Bosch",
         ],
+        contributors: [],
       },
 
       {
@@ -84,6 +103,7 @@ export const eras = [
           "Chunky organises Singapore's first Locking only battle event",
           "This marks the beginning of many Locking events to come",
         ],
+        contributors: ["chunky"],
       },
 
       {
@@ -92,6 +112,7 @@ export const eras = [
         points: [
           "Founded by Fabian Wong, with classes taught by KS",
         ],
+        contributors: [],
       },
 
       {
@@ -101,12 +122,17 @@ export const eras = [
           "Lion City Lockers' first performance",
           "Chunky and Fong win 2nd place for 2v2 Locking. This is the first time a Singapore duo has faced an overseas duo (Taiwan) in a battle final.",
         ],
+        contributors: [
+          "chunky",
+          "fong",
+        ],
       },
 
       {
         year: "2008",
         title: "CeeKay takes over Lion City Lockers",
         points: [],
+        contributors: ["ceekay"],
       },
     ],
   },
@@ -121,6 +147,12 @@ export const eras = [
           "Fong, CeeKay, KS, Jin and Diane travel to Taiwan to perform at Max Party VI",
           "The first time Singapore's Lockers learn from an OG",
         ],
+        contributors: [
+          "fong",
+          "ceekay",
+          "jin",
+          "diane",
+        ],
       },
 
       {
@@ -132,6 +164,16 @@ export const eras = [
           "Members: Fong, Jin, Daphne, Diane, K-Lock, KS (2009), Rachel (2010), KK (2011), Cherron (2011), CeeKay (2011)",
           '"The Superstars of Locking in Singapore" ~ Fong',
         ],
+        contributors: [
+          "fong",
+          "jin",
+          "diane",
+          "k-lock",
+          "rachel-hoe",
+          "kk",
+          "cherron",
+          "ceekay",
+        ],
       },
 
       {
@@ -140,6 +182,12 @@ export const eras = [
         points: [
           "They become the first Locking showcase group to place top 3 in a local showcase competition",
         ],
+        contributors: [
+          "fong",
+          "jin",
+          "diane",
+          "k-lock",
+        ],
       },
 
       {
@@ -147,6 +195,12 @@ export const eras = [
         title: "The Basic Fives win 1st place in the Gatsby Dance Competition World Finals (Japan) 2009",
         points: [
           "The first Singapore Locking group to win an international showcase competition",
+        ],
+        contributors: [
+          "fong",
+          "jin",
+          "diane",
+          "k-lock",
         ],
       },
 
@@ -158,6 +212,12 @@ export const eras = [
           "This brought a huge boost to the popularity of Locking amongst the public",
           'Hence began "the golden days of Singapore Locking" ~ Fong',
         ],
+        contributors: [
+          "fong",
+          "jin",
+          "diane",
+          "k-lock",
+        ],
       },
 
       {
@@ -167,6 +227,7 @@ export const eras = [
           'First time Singapore is involved in "Respect 16"',
           "Significant representation for Singapore in the international Locking battle scene",
         ],
+        contributors: ["chunky"],
       },
 
       {
@@ -176,12 +237,17 @@ export const eras = [
           "The first ever pure Locking item in a O School Dance recital that is open to public participation",
           '"Where many of our leading Lockers had their first taste of Locking" ~ Chunky',
         ],
+        contributors: [
+          "chunky",
+          "fong",
+        ],
       },
 
       {
         year: "2011",
         title: "DJ Bolo brings Juste Debout to Singapore (22/1/11)",
         points: [],
+        contributors: [],
       },
 
       {
@@ -191,6 +257,10 @@ export const eras = [
           "Read more about it here!",
           "Watch it here!",
         ],
+        contributors: [
+          "ceekay",
+          "chunky",
+        ],
       },
 
       {
@@ -199,6 +269,7 @@ export const eras = [
         points: [
           "Founded by Melissa Lim & Louis Kwek, with classes taught by Chunky & Robin",
         ],
+        contributors: ["chunky"],
       },
 
       {
@@ -208,6 +279,7 @@ export const eras = [
           "KS goes to serve NS",
           "Chunky & Marzipan take over",
         ],
+        contributors: ["chunky"],
       },
 
       {
@@ -217,12 +289,20 @@ export const eras = [
           "Singapore's first female Locking showcase group",
           "Members: Diane, Jac, Suria, Forest, Cherron, Jasmine, Lady Bird",
         ],
+        contributors: [
+          "diane",
+          "suria",
+          "forest",
+          "cherron",
+          "lady-bird",
+        ],
       },
 
       {
         year: "2012",
         title: "Scoo-B. Doo comes to Singapore to judge Lock-down 2012",
         points: [],
+        contributors: [],
       },
 
       {
@@ -232,6 +312,10 @@ export const eras = [
           "Founded by Josh, Geraldine, Jervine, Karen and Stephanie, with classes taught by Fong and Nic Ho",
           "Year 0 in 2012, Year 1 in 2013",
         ],
+        contributors: [
+          "fong",
+          "jervine",
+        ],
       },
 
       {
@@ -240,12 +324,14 @@ export const eras = [
         points: [
           "The first time Lock City comes to Singapore",
         ],
+        contributors: [],
       },
 
       {
         year: "2013",
         title: "Fong represents Singapore and enters Top 8 at the Lock City World Finals (Korea)",
         points: [],
+        contributors: ["fong"],
       },
 
       {
@@ -254,6 +340,7 @@ export const eras = [
         points: [
           "The first inter-university 1v1 Locking battle and the start of interaction between the university Locking communities",
         ],
+        contributors: [],
       },
 
       {
@@ -263,6 +350,10 @@ export const eras = [
           "Singapore hosts the Lock City World Finals",
           "Watch the LCL Old Birds Showcase with AGA here!",
         ],
+        contributors: [
+          "aga",
+          "ceekay",
+        ],
       },
 
       {
@@ -271,6 +362,7 @@ export const eras = [
         points: [
           "Founded by Zac Song",
         ],
+        contributors: [],
       },
 
       {
@@ -281,6 +373,10 @@ export const eras = [
           "CeeKay invites the Gogo Brothers and Hilty & Bosch to attend",
           "Watch the recap here!",
           '"End of a chapter, start of a new beginning" ~ RPProds',
+        ],
+        contributors: [
+          "fong",
+          "ceekay",
         ],
       },
     ],
@@ -296,6 +392,7 @@ export const eras = [
           "Lion Motif: iconic symbol of Singapore's cultural identity",
           'Door Knocker Motif: symbolic of the community being welcoming and open to all, fitting the stand that "as long as you Lock, and you are in Singapore, you are a Lion City Locker"',
         ],
+        contributors: [],
       },
 
       {
@@ -305,6 +402,10 @@ export const eras = [
           "KK wins 1st place, adding significantly to Singapore's presence in the international Locking battle scene",
           "Ray enters Top 30",
         ],
+        contributors: [
+          "ray",
+          "kk",
+        ],
       },
 
       {
@@ -313,18 +414,21 @@ export const eras = [
         points: [
           "COVID hits but Locking lives",
         ],
+        contributors: [],
       },
 
       {
         year: "2020",
         title: "Street Dance Roots by Alpha Omega Anderson, together with Scoo-B. Doo and Damita Jo Freeman",
         points: [],
+        contributors: [],
       },
 
       {
         year: "2023",
         title: "The Alpha Experience by Alpha Omega Anderson",
         points: [],
+        contributors: [],
       },
 
       {
@@ -333,6 +437,7 @@ export const eras = [
         points: [
           "Organised by Active Groove and Youth Creates",
         ],
+        contributors: [],
       },
 
       {
@@ -340,6 +445,11 @@ export const eras = [
         title: "Red Bull Dance Your Style Singapore 2025",
         points: [
           "Seeded Top 16: JPhunk, Kai, Saywan",
+        ],
+        contributors: [
+          "jphunk",
+          "kai",
+          "saywan",
         ],
       },
 
@@ -350,16 +460,25 @@ export const eras = [
           "Return of a seeding event for Lock City World Finals",
           "Organised by Chunky, Lady Bird, & Saywan, and sponsored by CeeKay",
         ],
+        contributors: [
+          "chunky",
+          "lady-bird",
+          "saywan",
+          "ceekay",
+        ],
       },
 
       {
         year: "2025",
         title: "GOLDEN",
         points: [
-            "A celebration of the Jazz roots of Funk, with a guest apperance by Ruben Chi from Ghetto Funk Collective",
-            "Organised by Rio and Lady Bird",
+          "A celebration of the Jazz roots of Funk, with a guest apperance by Ruben Chi from Ghetto Funk Collective",
+          "Organised by Rio and Lady Bird",
         ],
-      }
+        contributors: [
+          "lady-bird",
+        ],
+      },
     ],
   },
 ];
